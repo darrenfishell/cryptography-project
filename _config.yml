@@ -21,3 +21,4 @@ defaults:
       type: category
     values:
       layout: "category"
+theme: jekyll-theme-cayman
