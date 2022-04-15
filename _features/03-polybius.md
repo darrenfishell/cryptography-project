@@ -1,8 +1,8 @@
 ---
-id: contact
-name: Contact
-heading: The Third Heading
-subheading: Will Seal the Deal.
+id: polybius
+name: Polybius
+heading: Polybius
+subheading: Cipher
 image: "assets/img/polybius.png"
 ---
 
