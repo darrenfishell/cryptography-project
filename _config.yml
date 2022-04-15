@@ -1,7 +1,7 @@
 title: A brief history of cryptography
 description: CS5002, Spring 2022, Prof. Alan Jamieson
 sitename: A brief history of cryptography
-baseurl: 'https://cryptography.vip'
+baseurl: 'https://www.cryptography.vip'
 sass:
   sass_dir: /assets/_sass
   style: :compressed
