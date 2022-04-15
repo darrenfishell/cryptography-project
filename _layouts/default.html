@@ -1,20 +1,12 @@
 ---
-
+layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    {% include head.html %}
-</head>
-<body class="index">
-
-    {% include header.html %}
-
-    {{content}}
-
-    {% include footer.html %}
-
-    {% include scripts.html %}
-</body>
+<html>
+  {% include head.html %}
+  <body>
+  	{% include navigation.html %}
+  	{{ content }}
+  	<script src='{{ site.baseurl }}/assets/app.js'></script>
+	</body>
 </html>
