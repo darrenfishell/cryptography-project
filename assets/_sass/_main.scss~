@@ -3,7 +3,7 @@ main {
   section { overflow: hidden; }
 
   img {
-    // @extend .img-circle;
+    @extend .img-circle;
     @extend .img-responsive;
 
     &.pull-left {  margin-right: 40px;  }
