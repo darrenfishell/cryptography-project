@@ -1,8 +1,8 @@
 ---
-id: birthday-attack
-name: The Birthday Attack
-heading: Birthday
-subheading: Attack
+id: cipher-security
+name: Security
+heading: Prioritizing
+subheading: Security
 image: ""
 ---
 
