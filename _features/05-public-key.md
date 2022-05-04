@@ -3,7 +3,7 @@ id: public-key
 name: Public Key Cryptography
 heading: Public Key
 subheading: Cryptography
-image: "http://placehold.it/500x500"
+image: ""
 ---
 
 The traditional encryption method is to use the same key for encryption and decryption, which is stored by the sender and the receiver respectively and used during encryption and decryption. The main problem with this method is the generation, injection, storage, management and distribution of the key. etc. is complicated, especially as the number of users increases exponentially the demand for keys. In network communication, the distribution of a large number of keys is a difficult problem to solve.
