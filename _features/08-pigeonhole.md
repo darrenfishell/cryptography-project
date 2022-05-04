@@ -6,10 +6,22 @@ subheading: Principle
 image: ""
 ---
 
-Hash is a function to transform an input of arbitrary length (pre-image) into a fixed-length output through a hash algorithm, and the output is the hash value. This conversion is a kind of Contraction mapping, that is, the space of the hash value is usually much smaller than the space of the input, and different inputs may hash to the same output, so it is impossible to determine the unique input value from the hash value. Simply put, it is a function that compresses a message of any length into a message digest of a fixed length.
+Software engineers typically want to prepare for any scenario, so there's a preference for functions and programs that have an infinite domain of inputs. Hash functions map these inputs to a finite output, or codomain.
 
-One of the common algorithms for hashing is MD5. The principle of the MD5 algorithm can be briefly described as follows: the MD5 code processes the input information in 512-bit groups, and each group is divided into 16 32-bit subgroups. After a series of processing, the output of the algorithm consists of four Composed of 32-bit packets, concatenating these four 32-bit packets will generate a 128-bit hash value.
+This means that there's the possibility that two entirely different inputs will result in the same output, a weakness identified in the MD5 algorithm that makes it susceptible to a specific type of attack using the pigeonhole principle.
 
-In the MD5 algorithm, the information needs to be filled first, and this data is supplemented by bit, and the result of the final number of bits modulo 512 is 448. After the data is complemented, its digit length is only 64 bits apart, which is an integer multiple of 512. Even if the number of bits of this data modulo 512 is exactly 448, it must be complemented. The implementation process of the complement: first, add a 1 bit after the data; then add a bunch of 0 bits at the back, until the number of bits of the entire data is modulo 512 and the result is exactly 448. In short, at least 1 bit is added, and at most 512 bits may be added.
+The pigeonhole principle states that given $$ n $$ pigeons placed in $$ k $$ holes, if $$ n > k $$ then at least one hole must have more than one pigeon. In fact, we can say that at least one hole must have at least $$ \lceil n/k \rceil $$, rounding up to the next integer.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5xjMuZIMLLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Following the pigeonhole principle, since our range $$ n $$ is smaller than our domain $$ m $$, it follows that at least one collision must exist. An effective hash function looks only to minimize the number of collisions, but this complicates their use for cryptographic applications, as they are no longer secure.
+
+While the functions were initially created for speed in database upkeep and management, a special branch of hash functions that prioritized privacy, security, & transparency were developed for other uses, called cryptographic hashing functions.
+
+A requirement for hash functions is that it cannot be reversed, so the hash value cannot be used to generate the original input.
+
+Such hash functions are commonly used to store and validate passwords. In these scenarios, when a user submits their password for authentication, the password is then hashed and compared with the stored hash, rather than the actual password.
+
+Increasingly, these hash functions are "salted," which means adding randomnness to the password to further complicate attacks such as the frequency analysis mentioned earlier.
+
+"Salting" a hash algorithm involves concatenating the plaintext with randomized information, which means plaintext of the same value would actually have different hashes. These "salted" values are randomly generated each time a user modifies a password, meaning that they are consistent for a given user but unique across all users.
+
+Should anyone receive the database of stored, hashed passwords, this makes it much more difficult to identify any patterns among those passwords, as one would do with a frequency analysis that could limit the pool of likely passwords for any given hash.

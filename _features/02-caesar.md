@@ -1,11 +1,11 @@
 ---
 id: caesar
 name: Caesar's Code
-heading: No Match
+heading: A Match
 subheading: for Caesar
 image: "https://privacycanada.net/app/uploads/2020/01/caesar_cipher.png"
+caption: "The Caesar Cipher shifts the message by a set number of characters. <em>Image from <a href="https://privacycanada.net/classical-encryption/caesar-cipher/">Privacy Canada</a></em>"
 ---
-_Image from: Privacy Canada_
 
 Caesar cipher is one of the simplest and most widely known encryption techniques. All letters in the plaintext are shifted backwards (or forwards) in the alphabet by a fixed number $$ k $$ and then converted into ciphertext. For example, when the offset is 3, all letters A will be replaced with D, B with E, and so on.
 

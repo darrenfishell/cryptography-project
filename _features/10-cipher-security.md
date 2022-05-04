@@ -5,5 +5,3 @@ heading: Prioritizing
 subheading: Security
 image: ""
 ---
-
-All things birthday attack.

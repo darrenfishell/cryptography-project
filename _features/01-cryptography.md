@@ -3,7 +3,6 @@ id: cryptography
 name: Cryptography
 heading: What is
 subheading: Cryptography
-image: ""
 ---
 
 Cryptography is the study of how to transmit information secretly. In modern times, it specifically refers to the mathematical study of information and its transmission, which is often regarded as a branch of mathematics and computer science, and is also closely related to information theory.

@@ -3,10 +3,28 @@ id: hash
 name: Hash
 heading: Hash
 subheading: Functions
-image: "assets/img/hash-1.png"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/MD5_algorithm.svg/1280px-MD5_algorithm.svg.png"
+caption:
 ---
 
-Hash is a function to transform an input of arbitrary length (pre-image) into a fixed-length output through a hash algorithm, and the output is the hash value. This conversion is a kind of Contraction mapping, that is, the space of the hash value is usually much smaller than the space of the input, and different inputs may hash to the same output, so it is impossible to determine the unique input value from the hash value. Simply put, it is a function that compresses a message of any length into a message digest of a fixed length.
-One of the common algorithms for hashing is MD5. The principle of the MD5 algorithm can be briefly described as follows: the MD5 code processes the input information in 512-bit groups, and each group is divided into 16 32-bit subgroups. After a series of processing, the output of the algorithm consists of four Composed of 32-bit packets, concatenating these four 32-bit packets will generate a 128-bit hash value.
+A hashing function transforms an input of arbitrary length (pre-image) into a fixed-length output. The output is the _hash value_.
 
-In the MD5 algorithm, the information needs to be filled first, and this data is supplemented by bit, and the result of the final number of bits modulo 512 is 448. After the data is complemented, its digit length is only 64 bits apart, which is an integer multiple of 512. Even if the number of bits of this data modulo 512 is exactly 448, it must be complemented. The implementation process of the complement: first, add a 1 bit after the data; then add a bunch of 0 bits at the back, until the number of bits of the entire data is modulo 512 and the result is exactly 448. In short, at least 1 bit is added, and at most 512 bits may be added.
+This conversion is a kind of _contraction mapping_, where the hash value is usually much smaller than the input. This generally means that different inputs may hash to the same output, or they are not injective functions.
+
+For cryptography, this is important because it confounds any effort to determine the unique input value from the hash value.
+
+One of the common algorithms for hashing is MD5. The principle of the MD5 algorithm can be briefly described as follows:
+
+* The input information is broken into 512-bit groups
+* Each group is further divided into 16 32-bit subgroups.
+* Concatenating these four 32-bit packets will generate a 128-bit hash value.
+
+In the MD5 algorithm, the information needs to be padded out to a bit-length $$ x $$ where $$ x \mod 512 = 448 $$.
+
+After the data is complemented, its digit length is only 64 bits apart, which is an integer multiple of 512. Even if the number of bits of this data modulo 512 is exactly 448, it must be complemented.
+
+The implementation process of the complement is as follows: first, add a 1 bit after the data; then add a bunch of 0 bits at the back, until the number of bits modulo 512 is exactly 448. In short, at least 1 bit is added, and at most 512 bits may be added.
+
+Use the following interactive shell to produce an MD5 hash value for the password below:
+
+{% include_relative datacamp/md5-hash-playground.html %}
