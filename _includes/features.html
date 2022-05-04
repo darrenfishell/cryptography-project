@@ -3,7 +3,10 @@
     <hr>
 
     <section class='anchor' id='{{ feature.id }}'>
-      <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ feature.image }}'>
+      <figure class='{% cycle 'pull-right', 'pull-left' %}'>
+        <img src='{{ feature.image }}'>
+        <figcaption>{{ feature.caption }}</figcaption>
+      </figure>
       <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
       <div class='lead'>{{ feature.content }}</div>
     </section>
