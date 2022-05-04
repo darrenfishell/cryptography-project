@@ -3,7 +3,7 @@ id: polybius
 name: Polybius
 heading: Polybius
 subheading: Cipher
-image: "assets/img/polybius.png"
+image: "https://media.geeksforgeeks.org/wp-content/uploads/polybius-square.png"
 ---
 _Image from: geeksforgeeks.com_
 
