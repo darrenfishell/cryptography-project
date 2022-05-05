@@ -4,7 +4,7 @@ name: Hashes
 heading: Hash
 subheading: Functions
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/MD5_algorithm.svg/1280px-MD5_algorithm.svg.png"
-caption: "A diagram of steps in the MD5 hash algorithm. Image from <a href='https://en.wikipedia.org/wiki/MD5'>Wikipedia</a>"
+caption: "Image from <a href='https://en.wikipedia.org/wiki/MD5'>Wikipedia</a>"
 ---
 
 A hashing function transforms an input of arbitrary length (pre-image) into a fixed-length output. The output is the _hash value_.
