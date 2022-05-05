@@ -4,7 +4,7 @@ name: Alberti Cipher
 heading: Alberti
 subheading: Cipher
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Alberti_cipher_disk.svg/1280px-Alberti_cipher_disk.svg.png"
-caption: "The Alberti cipher uses two concentric disks, allowing for a change in the key in the middle of a piece of plaintext | Image from <a href="https://en.wikipedia.org/wiki/Alberti_cipher">Wikipedia</a>."
+caption: "The Alberti cipher uses two concentric disks, allowing for a change in the key in the middle of a piece of plaintext | Image from <a href='https://en.wikipedia.org/wiki/Alberti_cipher'>Wikipedia</a>."
 ---
 
 The Alberti cipher is an alternative classical cipher, representing a breakthrough in cipher complexity.

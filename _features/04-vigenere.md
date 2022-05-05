@@ -11,9 +11,9 @@ The Vigenère cipher uses an alphabetical grid and a keyword to encode and decod
 
 The table (shown in the figure) consists of 26 lines of the alphabet, each of which is obtained by offsetting the previous line one bit to the left. Which line of the alphabet to use for compilation is based on the key, and it changes constantly during the process.
 
-For example, suppose the plaintext is: ATTACKATDAWN
+For example, suppose the plaintext is: `ATTACKATDAWN`
 
-Select a keyword and repeat it to generate a key that is the same length as the plaintext. For example, when the keyword is LEMON, the key is: LEMONLEMONLE.
+Select a keyword and repeat it to generate a key that is the same length as the plaintext. For example, when the keyword is `LEMON`, the key is: `LEMONLEMONLE`.
 
 This key serves as a guide for which row of the alphabetical grid to use when encoding or decoding a message.
 
@@ -23,10 +23,10 @@ For the second letter, we move to the E row, based on our key, and then move acr
 
 And so on, you can get:
 
-* Plaintext: ATTACKATDAWN
-* Key: LEMONLEMONLE
-* Ciphertext: LXFOPVEFRNHR
+* Plaintext: `ATTACKATDAWN`
+* Key: `LEMONLEMONLE`
+* Ciphertext: `LXFOPVEFRNHR`
 
-The introduction of a key here adds a good deal of complexity to the cipher. For instance, by changing our key to ROAST, our ciphertext would then be: RHTSVBOTVTNB.
+The introduction of a key here adds a good deal of complexity to the cipher. For instance, by changing our key to `ROAST`, our ciphertext would then be: `RHTSVBOTVTNB`.
 
-Changing the key to BREAKNECK, our ciphertext would then be: BKXAMXEVNBNR.
+Changing the key to `BREAKNECK`, our ciphertext would then be: `BKXAMXEVNBNR`.

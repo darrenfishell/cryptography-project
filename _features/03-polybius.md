@@ -11,11 +11,11 @@ The Polybius cipher uses an alphabet arranged in a chessboard pattern to encrypt
 
 The rows are numbered 1-5, as are the columns. There are 26 letters in the table. Except I and J, each letter occupies its own cell. Each letter is then encoded as a coordinate, with the row number presented first.
 
-For example, the word _password_ becomes 35 11 43 43 52 34 42 14 after being encrypted using the Polybius cipher.
+For example, the word _password_ becomes `35 11 43 43 52 34 42 14` after being encrypted using the Polybius cipher.
 
 The cipher originated using the Greek alphabet, using just 24 letters, meaning that each letter would have its own unique coordinate, with one blank cell.
 
-For the combination of I/J, the decoder would simply need to note both possibilities and then use the context of the rest of the word to determine which letter the sender actually intended.
+For the combination of `I/J`, the decoder would simply need to note both possibilities and then use the context of the rest of the word to determine which letter the sender actually intended.
 
 Another version of this cipher scrambles the order of the initial letters, using a key. For instance, if we were to use our prior key of LEMON, these letters would fill our first row.
 

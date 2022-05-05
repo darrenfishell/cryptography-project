@@ -5,7 +5,3 @@ heading: Crypto
 subheading: Quip
 image: ""
 ---
-
-Work to decipher this puzzle: 
-
-

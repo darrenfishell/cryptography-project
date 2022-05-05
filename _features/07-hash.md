@@ -9,6 +9,8 @@ caption: "Image from <a href='https://en.wikipedia.org/wiki/MD5'>Wikipedia</a>"
 
 A hashing function transforms an input of arbitrary length (pre-image) into a fixed-length output. The output is the _hash value_.
 
+A proper hash function is different than an encryption algorithm in that it should only work in one direction. Like an encryption algorithm, it should also be _collision-free_, or injective, meaning that each input only has one output.
+
 This conversion is a kind of _contraction mapping_, where the hash value is usually much smaller than the input. This generally means that different inputs may hash to the same output, or they are not injective functions.
 
 For cryptography, this is important because it confounds any effort to determine the unique input value from the hash value.
@@ -25,6 +27,6 @@ After the data is complemented, its digit length is only 64 bits apart, which is
 
 The implementation process of the complement is as follows: first, add a 1 bit after the data; then add a bunch of 0 bits at the back, until the number of bits modulo 512 is exactly 448. In short, at least 1 bit is added, and at most 512 bits may be added.
 
-Use the following interactive shell to produce an MD5 hash value for the password below:
+Use the following interactive shell to produce an MD5 hash value and a SHA256 hash for the password below:
 
 {% include_relative datacamp/md5-hash-playground.html %}
