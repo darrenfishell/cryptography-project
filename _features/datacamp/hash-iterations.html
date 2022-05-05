@@ -1,23 +1,23 @@
 <div data-datacamp-exercise data-show-run-button data-lang="python">
 	
   <code data-type="pre-exercise-code">
-	import hashlib
-    #Define a salted password
-    string = "saltedpassword"
+import hashlib
+#Define a salted password
+string_val = "saltedpassword"
   </code>
 
   <code data-type="sample-code" style="white-space:pre;">
 	#Hashlib already imported
-	#Variable string = 'saltedpassword' already created
+	#Variable string_val = 'saltedpassword' already created
 
 	#Set number of iterations
 	iters = 3
 
 	#Reproduce hash multiple times
 	for i in range(0, iters):	
-		md5_hash = hashlib.md5(string.encode()).hexdigest()
-		sha256_hash = hashlib.sha256(string.encode()).hexdigest()
-		print('Hash ' + str(i+1) + ' of ' + string)
+		md5_hash = hashlib.md5(string_val.encode()).hexdigest()
+		sha256_hash = hashlib.sha256(string_val.encode()).hexdigest()
+		print('Hash ' + str(i+1) + ' of ' + string_val)
 		print('MD5: ' + md5_hash)
 		print('SHA256: ' + sha256_hash)
   </code>
