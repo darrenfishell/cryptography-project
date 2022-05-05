@@ -12,3 +12,5 @@ The following sources were consulted in compiling the sections of this website:
 * [AccessData white paper on MD5 vulnerabilities](https://ad-pdf.s3.amazonaws.com/papers/wp.MD5_Collisions.en_us.pdf)
 * [The Guardian: Bitcoin miners revived a dying coal plant – then CO2 emissions soared](https://www.theguardian.com/technology/2022/feb/18/bitcoin-miners-revive-fossil-fuel-plant-co2-emissions-soared)
 * [Digiconomist's Bitcoin Energy Consumption Index](https://digiconomist.net/bitcoin-energy-consumption/)
+* [Academy.binance.com: Blockchain Consensus Algorithms](https://academy.binance.com/en/articles/what-is-a-blockchain-consensus-algorithm)
+* [Wikipedia](https://www.wikipedia.org/)

@@ -18,6 +18,8 @@ The Bitcoin consensus mechanism is based on Proof of Work (PoW), where energy is
 
 "PoW" is the accounting method of digital currency. The so-called "proof-of-work" is to complete the verification and confirmation of the transaction in a very short period of time through the voting of special nodes. For a transaction, if several nodes with unrelated interests can reach a consensus, the entire network can reach a consensus on this transaction.
 
-Miners repeatedly insert bundled transaction combinations into the hash function until the result meets the criteria. The number of such trials per second is called the "hash rate".
+Miners repeatedly insert bundles of unverified transactions into the hash function, along with a value called a "nonce" and a timestamp of the transaction, until the result meets a current difficulty requirement. The number of such trials per second is called the "hash rate" and is recalibrated to ensure an average of 10 minutes elapses between the addition of successive blocks.
 
-Whoever first calculates the correct answer of the random hash function and submits it has a revenue. There are no tricky solutions to these problems. The computer can only use enumeration until it has an answer. These calculations are meaningless by themselves, just a proof-of-work. However, it is nearly impossible to put fake transactions in without detection because, in theory, it would require more computing power than everyone else combined.
+Whoever first calculates the correct answer of the random hash function and submits it receives a reward. There are no tricky solutions to these problems. The computer can only use enumeration until it has an answer.
+
+These calculations are meaningless by themselves, just a proof-of-work. However, it is nearly impossible to put fake transactions in without detection because, in theory, it would require more computing power than everyone else combined.
