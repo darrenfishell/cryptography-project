@@ -1,6 +1,6 @@
 ---
 id: caesar
-name: Caesar's Code
+name: Caesar
 heading: A Match
 subheading: for Caesar
 image: "https://privacycanada.net/app/uploads/2020/01/caesar_cipher.png"

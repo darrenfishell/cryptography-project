@@ -1,6 +1,6 @@
 ---
 id: alberti
-name: Alberti Cipher
+name: Alberti
 heading: Alberti
 subheading: Cipher
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Alberti_cipher_disk.svg/1280px-Alberti_cipher_disk.svg.png"

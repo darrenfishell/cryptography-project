@@ -1,6 +1,6 @@
 ---
 id: pigeonhole
-name: Pigeonhole Principle
+name: Pigeonhole
 heading: The Pigeonhole
 subheading: Principle
 image: ""

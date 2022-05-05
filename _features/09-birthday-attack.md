@@ -1,7 +1,7 @@
 ---
 id: birthday-attack
-name: The Birthday Attack
-heading: Birthday
+name: Birthday Attack
+heading: The Birthday
 subheading: Attack
 image: ""
 ---

@@ -1,6 +1,6 @@
 ---
 id: public-key
-name: Public Key Cryptography
+name: Public Keys
 heading: Public Key
 subheading: Cryptography
 image: ""

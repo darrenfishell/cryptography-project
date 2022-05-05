@@ -1,6 +1,6 @@
 ---
 id: hash
-name: Hash
+name: Hashes
 heading: Hash
 subheading: Functions
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/MD5_algorithm.svg/1280px-MD5_algorithm.svg.png"
