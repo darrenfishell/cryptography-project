@@ -6,7 +6,9 @@
     <br><br>#Define a salted password
     <br>string = "saltedpassword"
     <br><br>#Hash the password using an MD5 algorithm
-    <br>md5_hash = hashlib.sha256(string.encode()).hexdigest()
+    <br>md5_hash = hashlib.md5(string.encode()).hexdigest()
+    <br>sha256_hash = hashlib.sha256(string.encode()).hexdigest()
     <br>print(md5_hash)
+    <br>print(sha256_hash)
   </code>
 </div>
