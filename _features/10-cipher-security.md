@@ -23,3 +23,5 @@ Miners repeatedly insert bundles of unverified transactions into the hash functi
 Whoever first calculates the correct answer of the random hash function and submits it receives a reward. There are no tricky solutions to these problems. The computer can only use enumeration until it has an answer.
 
 These calculations are meaningless by themselves, just a proof-of-work. However, it is nearly impossible to put fake transactions in without detection because, in theory, it would require more computing power than everyone else combined.
+
+The SHA256 hash for the [most recently added block](https://blockstream.info/block/0000000000000000000182a7e4adbf2bdeb04882df6352eb61d1ed4f466c10b2) of Bitcoin transactions was `0000000000000000000182a7e4adbf2bdeb04882df6352eb61d1ed4f466c10b2`, with 19 leading zeroes.
