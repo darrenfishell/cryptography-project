@@ -6,7 +6,7 @@
     <br>string = "saltedpassword"
   </code>
 
-  <code data-type="sample-code">
+  <code data-type="sample-code" style="white-space:pre;">
 	#Hashlib already imported
 	<br>#Variable string = 'saltedpassword' already created
     
@@ -14,10 +14,10 @@
 	<br>iters = 3
 	<br><br>#Reproduce hash multiple times
 	<br>for i in range(0, iters):	
-		&nbsp;&nbsp;&nbsp;&nbsp;<br>md5_hash = hashlib.md5(string.encode()).hexdigest()
-		<br>sha256_hash = hashlib.sha256(string.encode()).hexdigest()
-		<br><br>print('Hash ' + str(i+1) + ' of ' + string)
-		<br>print('MD5: ' + md5_hash)
-		<br>print('SHA256: ' + sha256_hash)
+		<br>	md5_hash = hashlib.md5(string.encode()).hexdigest()
+		<br>	sha256_hash = hashlib.sha256(string.encode()).hexdigest()
+		<br><br>	print('Hash ' + str(i+1) + ' of ' + string)
+		<br>	print('MD5: ' + md5_hash)
+		<br>	print('SHA256: ' + sha256_hash)
   </code>
 </div>
