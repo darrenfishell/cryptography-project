@@ -27,6 +27,11 @@ After the data is complemented, its digit length is only 64 bits apart, which is
 
 The implementation process of the complement is as follows: first, add a 1 bit after the data; then add a bunch of 0 bits at the back, until the number of bits modulo 512 is exactly 448. In short, at least 1 bit is added, and at most 512 bits may be added.
 
-Use the following interactive shell to produce an MD5 hash value and a SHA256 hash for the password below:
+Use the following interactive shell to produce an MD5 hash value and a SHA256 hash for the plaintext password below:
 
 {% include_relative datacamp/md5-hash-playground.html %}
+
+Now, let's reproduce the hash multiple times. Moving through just three iterations, we can see that the values are the same in each iteration, for both hash methods:
+
+{% include_relative datacamp/hash-iterations.html %}
+
