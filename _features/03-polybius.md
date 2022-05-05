@@ -4,7 +4,7 @@ name: Polybius
 heading: The Polybius
 subheading: Cipher
 image: "https://media.geeksforgeeks.org/wp-content/uploads/polybius-square.png"
-caption: "Sample caption. _Image from [geeksforgeeks.com](https://www.geeksforgeeks.org/polybius-square-cipher/)"
+caption: "Sample caption. <em>Image from <a href='https://www.geeksforgeeks.org/polybius-square-cipher/'>geeksforgeeks.com</a></em>"
 ---
 
 The Polybius cipher uses an alphabet arranged in a chessboard pattern to encrypt and decrypt messages. Using this grid, the texts can be expressed in the form of coordinates. The letter is the ciphertext, and the plaintext is the coordinates of the letter. Polybius Square is a matrix with 6 rows and 6 columns.

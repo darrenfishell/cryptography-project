@@ -4,7 +4,7 @@ name: Vigenère
 heading: Vigenère's
 subheading: Cipher
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/1280px-Vigen%C3%A8re_square_shading.svg.png"
-caption: "The Vigenère square, or table, is used along with a key to encode and decode messages. Image from <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Wikipedia</a>."
+caption: "The Vigenère square, or table, is used along with a key to encode and decode messages. Image from <a href='https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher'>Wikipedia</a>."
 ---
 
 The Vigenère cipher uses an alphabetical grid and a keyword to encode and decode messages.
