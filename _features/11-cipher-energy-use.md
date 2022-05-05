@@ -18,9 +18,11 @@ This energy consumption is tied to Bitcoin's Proof-of-Work method of validating 
 
 The second-largest cryptocurrency platform, Ethereum, [plans to move away](https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/) from this model over the next year, instead using a method called proof-of-stake.
 
-In this system, users can validate blocks of data by freezing tokens. As users keep more coins, their chances of validating blocks also increase.
+In this system, users can validate blocks of data by freezing tokens, as a kind of security deposit. The users that deposit more coins receive a higher chance of validating the next block and, therefore, receiving the associated reward.
 
 Additionally, proof-of-stake is a low-energy consensus algorithm that consumes little to no energy when validating blocks, as it does not require users to spend computing power to solve cryptographic hashes. Any member holding tokens can validate blocks.
+
+A number of other methods are also under development, though few others have been deployed as actual consensus algorithms.
 
 There are a number of ways in which the goal of a more energy-efficient blockchain might be possible. In simple terms, energy efficiency means that people can send and complete more transactions while consuming the same or less energy.
 
