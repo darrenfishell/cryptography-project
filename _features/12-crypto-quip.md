@@ -11,4 +11,4 @@ SASE NO WODN EHT ODAR
 
 _Hint: Who's a Wiz kid?_
 
-Email [fishell.d@northeastern.edu](mailto:fishell.d@northeastern.edu) with the correct response.
+Email [Darren Fishell](mailto:fishell.d@northeastern.edu) with the correct response.
