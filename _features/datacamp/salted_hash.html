@@ -1,0 +1,41 @@
+<div data-datacamp-exercise data-show-run-button data-lang="python">
+	
+  <code data-type="pre-exercise-code">
+	import hashlib
+	import random
+	import string
+		
+  </code>
+
+  <code data-type="sample-code" style="white-space:pre;">
+	# Imported hashlib, random, string packages
+	
+	#Define a sample password
+	string_val = 'password'
+
+	# Define iterations
+	iters = 3
+
+	# Define function to generate a random string
+	def random_string():
+		letters = string.ascii_lowercase
+		salt = ''.join(random.choice(letters) for i in range(10))
+		return salt
+
+	# Iterate through with new random salt
+	for i in range(0, iters):	
+		#Store salt
+		salt = random_string()
+		
+		# Concatenate password with random string
+		salty_string = string_val + salt
+		
+		# Hash the salted password
+		md5_hash = hashlib.md5(salty_string.encode()).hexdigest()
+		sha256_hash = hashlib.sha256(salty_string.encode()).hexdigest()
+		
+		print('Hash ' + str(i+1) + ' of ' + string_val)
+		print('MD5: ' + md5_hash)
+		print('SHA256: ' + sha256_hash)
+  </code>
+</div>

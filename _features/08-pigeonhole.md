@@ -24,4 +24,8 @@ Increasingly, these hash functions are "salted," which means adding randomnness 
 
 "Salting" a hash algorithm involves concatenating the plaintext with randomized information, which means plaintext of the same value would actually have different hashes. These "salted" values are randomly generated each time a user modifies a password, meaning that they are consistent for a given user but unique across all users.
 
+We can mimic this by generating a random 10-character string and then performing the same hash as we did above. Iterating through three times, we can see the hash values now change with each pass.
+
+{% include_relative datacamp/salted_hash.html %}
+
 Should anyone receive the database of stored, hashed passwords, this makes it much more difficult to identify any patterns among those passwords, as one would do with a frequency analysis that could limit the pool of likely passwords for any given hash.
