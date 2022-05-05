@@ -28,3 +28,35 @@ The implementation process of the complement is as follows: first, add a 1 bit a
 Use the following interactive shell to produce an MD5 hash value for the password below:
 
 {% include_relative datacamp/md5-hash-playground.html %}
+
+DIRECT embed
+
+<div data-datacamp-exercise data-show-run-button data-lang="python">
+
+  <!-- <code data-type="sample-code">
+    # Import the hashlib package
+
+    import hashlib
+
+    #Define a salted password
+
+    string = "saltedpassword"
+
+    #Hash the password using an MD5 algorithm
+
+    <br><br>
+
+    md5_hash = hashlib.sha256(string.encode()).hexdigest()
+
+    print(md5_hash)
+
+  </code> -->
+
+<code data-type="sample-code" style="white-space: pre">
+  # Create a variable a, equal to 5
+
+
+  # Print out a
+</code>
+
+</div>
