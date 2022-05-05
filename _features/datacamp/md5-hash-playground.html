@@ -4,16 +4,18 @@
   </code>
   <code data-type="sample-code">
     # Import the hashlib package
+
     import hashlib
 
-
     #Define a salted password
+
     string = "saltedpassword"
 
-
     #Hash the password using an MD5 algorithm
-    md5_hash = hashlib.sha256(string.encode()).hexdigest()
 
+    <br><br>
+
+    md5_hash = hashlib.sha256(string.encode()).hexdigest()
 
     print(md5_hash)
 
